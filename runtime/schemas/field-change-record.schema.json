@@ -1,0 +1,22 @@
+{
+  "$id": "field-change-record",
+  "description": "Enforced field set, enums, and channel vocabulary for a host-neutral, evidence-bound field-change record. Single source read by scripts/validate_field_change.py; the prose field-change-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (action_ref, boundary, target_effect non-empty; field_channels non-empty and drawn from the channel vocabulary; field_effect OBSERVED requires a wake_ref; no VERIFIED assurance) stay in the validator. Adapts FRR v0.4's Residual-Location and Field-Change pass (state vs. field persistence) to the FRR system's enforced-record model.",
+  "record": {
+    "required": [
+      "record_type",
+      "action_ref",
+      "boundary",
+      "target_effect",
+      "field_effect",
+      "field_channels",
+      "assurance_level"
+    ],
+    "enums": {
+      "field_effect": ["NONE_OBSERVED", "OBSERVED", "UNVERIFIABLE"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    },
+    "lists": {
+      "channel": ["OBSERVATIONS", "DATASET", "RETRIEVAL_STORE", "USERS", "INCENTIVES", "ADMISSIBLE_ACTIONS", "INSTRUMENTS"]
+    }
+  }
+}

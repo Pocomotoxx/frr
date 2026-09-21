@@ -1,0 +1,15 @@
+FRR — Fluid Relational Reasoning
+
+FRR v0.4 originates as a public reasoning seed ("Fluid Relational Reasoning,
+v0.4 — Residual Location and Field Change"). This repository is a structured,
+navigable rendering of that discipline as a host-neutral, Markdown-based reasoning
+system, with an added records layer (schemas, validators, tests) that makes the
+load-bearing claims checkable.
+
+The field content faithfully carries the source discipline. The records layer, the
+load path (FRR.md / BOOT.md / kernel / field / passes), and the validators are this
+repository's contribution. No rule depends on a specific vendor, model, product, or
+client.
+
+This system is advisory reasoning discipline. It is not a guarantee of correctness,
+and it does not promise final ground.

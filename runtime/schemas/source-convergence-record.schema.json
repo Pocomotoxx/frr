@@ -1,0 +1,18 @@
+{
+  "$id": "source-convergence-record",
+  "description": "Enforced field set and enums for a host-neutral, evidence-bound source-convergence record. Single source read by scripts/validate_source_convergence.py; the prose source-convergence-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (at least two distinct source_refs; strengthens_claim true requires INDEPENDENT convergence; SHARED_ORIGIN requires a shared_origin_ref; no VERIFIED assurance) stay in the validator. Adapts FRR v0.4's independence test for apparent agreement across sources.",
+  "record": {
+    "required": [
+      "record_type",
+      "claim_ref",
+      "source_refs",
+      "convergence",
+      "strengthens_claim",
+      "assurance_level"
+    ],
+    "enums": {
+      "convergence": ["INDEPENDENT", "SHARED_ORIGIN", "UNKNOWN"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    }
+  }
+}

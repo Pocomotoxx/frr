@@ -1,0 +1,31 @@
+{
+  "$id": "compression-fidelity-record",
+  "description": "Enforced field set and enums for a host-neutral, evidence-bound compression-fidelity record. Single source read by scripts/validate_compression_fidelity.py; the prose compression-fidelity-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (trivial_collapse_check must be PASS, at least one disconfirming probe, a probe that separated names the returned distinction, verdict FAITHFUL only when nothing separated, scope fully specified, no VERIFIED assurance) stay in the validator. Adapts the Faithful Compression Pass to the FRR system's enforced-record model.",
+  "record": {
+    "required": [
+      "record_type",
+      "claim_ref",
+      "preserved_behavior",
+      "scope",
+      "trivial_collapse_check",
+      "probes",
+      "verdict",
+      "assurance_level"
+    ],
+    "enums": {
+      "preserved_behavior": ["PREDICTION", "OBSERVABLE", "INTERVENTION", "INVARIANT", "COMPOSITION", "TASK"],
+      "trivial_collapse_check": ["PASS", "FAIL"],
+      "verdict": ["FAITHFUL", "NEEDS_REPAIR", "REJECTED"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    }
+  },
+  "scope": {
+    "required": ["domain", "horizon", "tolerance"]
+  },
+  "probe": {
+    "required": ["case_a_ref", "case_b_ref", "applied_pressure", "separated"],
+    "enums": {
+      "applied_pressure": ["LONGER_HORIZON", "FINER_OBSERVATION", "COMPOSITION", "INTERVENTION", "TRANSLATION"]
+    }
+  }
+}

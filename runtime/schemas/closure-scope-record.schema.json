@@ -1,0 +1,19 @@
+{
+  "$id": "closure-scope-record",
+  "description": "Enforced field set and enums for a host-neutral, evidence-bound closure-scope record. Single source read by scripts/validate_closure_scope.py; the prose closure-scope-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (basis_ref non-empty; a NOVEL assertion requires ESTABLISHED_OPEN scope; ESTABLISHED_OPEN requires a field_evidence_ref; no VERIFIED assurance) stay in the validator. Adapts FRR v0.4's calibrated meanings of 'open' to the FRR system's enforced-record model.",
+  "record": {
+    "required": [
+      "record_type",
+      "claim_ref",
+      "assertion_kind",
+      "closure_scope",
+      "basis_ref",
+      "assurance_level"
+    ],
+    "enums": {
+      "assertion_kind": ["UNRESOLVED", "NOVEL"],
+      "closure_scope": ["OPEN_IN_INQUIRY", "OPEN_UNDER_METHOD", "UNLOCATED_IN_SEARCH", "ESTABLISHED_OPEN"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    }
+  }
+}
