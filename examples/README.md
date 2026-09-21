@@ -41,6 +41,12 @@ python scripts/validate_compression_fidelity.py examples/compression-fidelity.ex
   it added — and its `provenance_refs` say honestly that the causation is imposed
   and unsourced. The conclusion is not forbidden; the smuggling is surfaced.
 
+- **`verdict.example.json`** — a claim that a robot placed a mug on a shelf. Two
+  criteria `PASS` with cited evidence (an after-action image digest, a gripper-state
+  log); one is `UNVERIFIABLE` (no sensor covers shelf integrity). Because not all
+  criteria pass, the `verdict` is `PARTIAL`, not `ACHIEVED` — evidence before
+  verdict.
+
 ## What a passing record proves
 
 Only that the check was posed and is internally consistent. Assurance stays at

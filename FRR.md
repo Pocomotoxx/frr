@@ -25,8 +25,8 @@ FRR has a **field** and a **records** layer, and they are different in kind.
 - The **records** (`passes/`, `runtime/schemas/`, `scripts/`) are the small set of
   moments where the field's discipline is made **checkable**: a compression that
   claims fidelity, a claim of openness or novelty, a consequential action's field
-  effect, cross-source agreement, and a conclusion that ends the inquiry each emit
-  an evidence-bound record that a
+  effect, cross-source agreement, a conclusion that ends the inquiry, and a claim
+  that a goal was achieved each emit an evidence-bound record that a
   validator checks for shape and internal consistency. A record's assurance never
   reaches `VERIFIED`; a passing validator proves the check was posed, not that the
   world agrees.

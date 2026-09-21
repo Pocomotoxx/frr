@@ -72,6 +72,24 @@ Two ideas were adapted (not absorbed):
   FRR share an author, so this agreement is inherited, not independent — a
   source-convergence `SHARED_ORIGIN`, not corroboration.
 
+## Added from the PhyAgentOS proposal
+
+PhyAgentOS-core is a runtime recursive-self-improvement embodied-agent OS. Most of
+it — agent loop, Forge Gateway, tool APIs, channels, bus, SQLite orchestration,
+robot/simulator — is runtime, and FRR references such systems as an external
+substrate rather than absorbing them.
+
+One idea was adapted (not absorbed):
+
+- the **Verdict** pass — PhyAgentOS's "evidence before verdict" contract, where
+  execution, evidence, and verdict are kept separate, a verdict is decided against
+  declared success criteria each carrying its own evidence, and advisories cannot
+  replace criteria or evidence. Unlike the CSIR agreement, this convergence is
+  **independent**: a robotics agent OS (different author, tradition) and a reasoning
+  discipline land on the same principle — a source-convergence `INDEPENDENT` that
+  does strengthen the principle. The redaction discipline (records carry references,
+  not raw content or credentials) is a further candidate not yet built.
+
 ## Compressed
 
 > Let the intuition move. Identify what mathematical work each expression performs

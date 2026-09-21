@@ -6,7 +6,7 @@ checkable: when a claim carries weight, the pass asks for a small, evidence-boun
 assurance is `DECLARED` or `UNVERIFIABLE`, never `VERIFIED` — a passing validator
 proves the check was posed, not that the world agrees.
 
-Five passes carry a record; two are advisory-only. Activate a pass only when its
+Six passes carry a record; two are advisory-only. Activate a pass only when its
 corresponding claim is actually made.
 
 | Pass | When | Record |
@@ -16,6 +16,7 @@ corresponding claim is actually made.
 | [Field Change](FIELD_CHANGE.md) | a consequential (writing or externally effectful) action | `field-change-record` |
 | [Source Weave](SOURCE_WEAVE.md) | cross-source agreement offered as support | `source-convergence-record` |
 | [Closure Restraint](CLOSURE_RESTRAINT.md) | a conclusion / summary / closure that ends the inquiry | `closure-restraint-record` |
+| [Verdict](VERDICT.md) | a claim that a goal was achieved / a task succeeded / a change improved something | `verdict-record` |
 | [Crystallization](CRYSTALLIZATION.md) | a structure stabilizes as a definition/model/decision | advisory only |
 
 Records live under `runtime/schemas/*.schema.{json,md}`; validators under
