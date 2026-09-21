@@ -1,0 +1,10 @@
+{
+  "record_type": "field-change-record",
+  "action_ref": "action:retrain-recommender-on-click-logs",
+  "boundary": "the served users and the retrieval store, over the following 14 days",
+  "target_effect": "click-through rate improved on the served slate",
+  "field_effect": "OBSERVED",
+  "field_channels": ["RETRIEVAL_STORE", "USERS", "INCENTIVES"],
+  "wake_ref": "a feedback loop: later slates are shaped by earlier clicks, changing what subsequent users encounter",
+  "assurance_level": "DECLARED"
+}

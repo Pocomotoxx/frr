@@ -1,0 +1,8 @@
+{
+  "record_type": "closure-scope-record",
+  "claim_ref": "claim:contraction-bound-not-decided",
+  "assertion_kind": "UNRESOLVED",
+  "closure_scope": "OPEN_UNDER_METHOD",
+  "basis_ref": "attempted a Lyapunov metric M; the technique does not decide the bound",
+  "assurance_level": "DECLARED"
+}

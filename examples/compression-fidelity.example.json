@@ -1,0 +1,18 @@
+{
+  "record_type": "compression-fidelity-record",
+  "claim_ref": "claim:two-histories-are-one-effective-state",
+  "preserved_behavior": "INTERVENTION",
+  "scope": { "domain": "coarse-grained Markov chain", "horizon": "20 steps under control", "tolerance": "0.05 total variation" },
+  "trivial_collapse_check": "PASS",
+  "probes": [
+    {
+      "case_a_ref": "history:h1",
+      "case_b_ref": "history:h2",
+      "applied_pressure": "INTERVENTION",
+      "separated": true,
+      "returned_distinction": "the two histories respond differently to the same macro-intervention (control-relevant, not prediction-relevant)"
+    }
+  ],
+  "verdict": "NEEDS_REPAIR",
+  "assurance_level": "DECLARED"
+}
