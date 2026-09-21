@@ -23,6 +23,7 @@ pipeline. It has two layers:
 | [`kernel/KERNEL.md`](kernel/KERNEL.md) | non-negotiable rules |
 | [`field/`](field/) | compact seed, lenses, regimes, residual location, mathematical contact, naming the depth |
 | [`passes/`](passes/README.md) | compression fidelity, closure scope, field change, source weave, crystallization |
+| [`examples/`](examples/README.md) | one validated record per pass — real fixtures, not prose |
 | [`runtime/schemas/`](runtime/schemas) | the record schemas (JSON source + prose) |
 | [`scripts/`](scripts) | validators and tests |
 | [`docs/LINEAGE.md`](docs/LINEAGE.md) | v0.3 → v0.4 lineage |

@@ -1,0 +1,9 @@
+{
+  "record_type": "source-convergence-record",
+  "claim_ref": "claim:lumpability-criterion-supported",
+  "source_refs": ["paper:A-2021", "paper:B-2022", "survey:C-2023"],
+  "convergence": "SHARED_ORIGIN",
+  "shared_origin_ref": "all three inherit the same benchmark and definition from one 2019 source",
+  "strengthens_claim": false,
+  "assurance_level": "DECLARED"
+}
