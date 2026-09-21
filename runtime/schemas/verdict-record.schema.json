@@ -1,0 +1,23 @@
+{
+  "$id": "verdict-record",
+  "description": "Enforced field set and enums for a host-neutral, evidence-bound verdict record. Single source read by scripts/validate_verdict.py; the prose verdict-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (goal_ref non-empty; at least one criterion; a PASS criterion requires an evidence_ref; verdict ACHIEVED requires every criterion PASS; no VERIFIED assurance) stay in the validator. Adapts the PhyAgentOS 'evidence before verdict' contract (execution / evidence / verdict kept separate; advisories cannot replace criteria or evidence) to the FRR system's enforced-record model.",
+  "record": {
+    "required": [
+      "record_type",
+      "goal_ref",
+      "criteria",
+      "verdict",
+      "assurance_level"
+    ],
+    "enums": {
+      "verdict": ["ACHIEVED", "NOT_ACHIEVED", "PARTIAL", "UNVERIFIABLE"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    }
+  },
+  "criterion": {
+    "required": ["criterion", "status"],
+    "enums": {
+      "status": ["PASS", "FAIL", "UNVERIFIABLE"]
+    }
+  }
+}

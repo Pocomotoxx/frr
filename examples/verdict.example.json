@@ -1,0 +1,11 @@
+{
+  "record_type": "verdict-record",
+  "goal_ref": "goal:place-the-mug-on-the-top-shelf",
+  "criteria": [
+    { "criterion": "the mug is on the top shelf", "status": "PASS", "evidence_ref": "after-action image, sha256:ab12..cd (per-source seq 7)" },
+    { "criterion": "the mug was not dropped during transit", "status": "PASS", "evidence_ref": "gripper-state log, no zero-force gap" },
+    { "criterion": "the shelf was not damaged", "status": "UNVERIFIABLE", "evidence_ref": "no sensor covers shelf integrity" }
+  ],
+  "verdict": "PARTIAL",
+  "assurance_level": "DECLARED"
+}

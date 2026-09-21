@@ -14,6 +14,7 @@ from scripts.validate_closure_scope import validate as v_closure
 from scripts.validate_field_change import validate as v_field
 from scripts.validate_source_convergence import validate as v_source
 from scripts.validate_closure_restraint import validate as v_restraint
+from scripts.validate_verdict import validate as v_verdict
 
 EXAMPLES = ROOT / "examples"
 
@@ -23,6 +24,7 @@ CASES = {
     "field-change.example.json": v_field,
     "source-convergence.example.json": v_source,
     "closure-restraint.example.json": v_restraint,
+    "verdict.example.json": v_verdict,
 }
 
 
