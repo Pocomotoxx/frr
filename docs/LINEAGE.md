@@ -87,8 +87,11 @@ One idea was adapted (not absorbed):
   replace criteria or evidence. Unlike the CSIR agreement, this convergence is
   **independent**: a robotics agent OS (different author, tradition) and a reasoning
   discipline land on the same principle — a source-convergence `INDEPENDENT` that
-  does strengthen the principle. The redaction discipline (records carry references,
-  not raw content or credentials) is a further candidate not yet built.
+  does strengthen the principle.
+- the **Record Hygiene** discipline (`field/RECORD_HYGIENE.md`) and its checkable
+  form (`scripts/redaction.py` + `scripts/validate_record_hygiene.py`) — PhyAgentOS's
+  deterministic redaction of credentials, endpoints, and paths from persisted
+  records, adapted to enforce that FRR records carry references, not raw secrets.
 
 ## Compressed
 
