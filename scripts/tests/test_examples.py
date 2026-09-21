@@ -13,6 +13,7 @@ from scripts.validate_compression_fidelity import validate as v_compression
 from scripts.validate_closure_scope import validate as v_closure
 from scripts.validate_field_change import validate as v_field
 from scripts.validate_source_convergence import validate as v_source
+from scripts.validate_closure_restraint import validate as v_restraint
 
 EXAMPLES = ROOT / "examples"
 
@@ -21,6 +22,7 @@ CASES = {
     "closure-scope.example.json": v_closure,
     "field-change.example.json": v_field,
     "source-convergence.example.json": v_source,
+    "closure-restraint.example.json": v_restraint,
 }
 
 
