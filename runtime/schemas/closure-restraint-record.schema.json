@@ -1,0 +1,19 @@
+{
+  "$id": "closure-restraint-record",
+  "description": "Enforced field set, the assurance_level enum, and the structure vocabulary for a host-neutral, evidence-bound closure-restraint record. Single source read by scripts/validate_closure_restraint.py; the prose closure-restraint-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (conclusion_ref and burden_ref non-empty; imposed_structure drawn from the structure vocabulary; a non-empty imposed_structure requires provenance_refs; no VERIFIED assurance) stay in the validator. Adapts the CSIR/RICC anti-closure and structure-sealing insight to FRR's kernel rule that descent is licensed only by a declared burden.",
+  "record": {
+    "required": [
+      "record_type",
+      "conclusion_ref",
+      "burden_ref",
+      "imposed_structure",
+      "assurance_level"
+    ],
+    "enums": {
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    },
+    "lists": {
+      "structure": ["CAUSAL", "TEMPORAL", "HIERARCHY", "NARRATIVE"]
+    }
+  }
+}

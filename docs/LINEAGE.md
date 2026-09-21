@@ -46,10 +46,31 @@ records what carried over, what earlier revisions added, and what v0.4 adds.
 ## Added by this repository (the structured rendering)
 
 - A host-neutral load path (`FRR.md` → `BOOT.md` → `kernel/` → `field/`).
-- The **records layer**: four passes whose load-bearing claims emit an
-  evidence-bound record with a validator and tests — compression fidelity, closure
-  scope, field change, and source convergence — none of which raises assurance to
-  `VERIFIED`.
+- The **records layer**: passes whose load-bearing claims emit an evidence-bound
+  record with a validator and tests — compression fidelity, closure scope, field
+  change, source convergence, and closure restraint — none of which raises assurance
+  to `VERIFIED`.
+
+## Added from the CSIR / RICC proposal
+
+The Context-Sealed Intermediate Representation (CSIR / RICC) proposal is a runtime
+representation-isolation system: it strips causal, temporal, hierarchical, and
+narrative structure from inputs so a model cannot silently rebuild an interpretive
+system, and it measures the reconstruction. Most of it — atomizer, context seal,
+perturbation, decoder, output gate, retry, the CRI/SPI metrics — is a pipeline, and
+a pipeline does not belong inside a reasoning field; FRR references such systems as
+an external substrate rather than absorbing them.
+
+Two ideas were adapted (not absorbed):
+
+- the **Closure Restraint** pass and `field/IMPOSED_STRUCTURE.md` — CSIR's
+  anti-closure and structure-sealing insight rendered as FRR's evaluative form: a
+  reasoner must own the causal / temporal / hierarchical / narrative structure a
+  conclusion imposes, and license the closure with a declared burden;
+- the observation that CSIR's reconstruction scores are the runtime mirror of the
+  Faithful Compression Pass ("did the erased structure return?"). Note that CSIR and
+  FRR share an author, so this agreement is inherited, not independent — a
+  source-convergence `SHARED_ORIGIN`, not corroboration.
 
 ## Compressed
 

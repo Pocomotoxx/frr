@@ -1,0 +1,11 @@
+{
+  "record_type": "closure-restraint-record",
+  "conclusion_ref": "conclusion:the-reorganization-caused-the-employee-uncertainty",
+  "burden_ref": "the user asked for the cause of the employee uncertainty (a decision to explain)",
+  "imposed_structure": ["CAUSAL", "NARRATIVE"],
+  "provenance_refs": [
+    "CAUSAL: imposed and unsourced — the source lists the four events in sequence but states no causation; the 'because' is supplied by the reasoner",
+    "NARRATIVE: imposed — the decline-then-response arc is a reading, not a claim made in the material"
+  ],
+  "assurance_level": "DECLARED"
+}

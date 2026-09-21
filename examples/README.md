@@ -35,6 +35,12 @@ python scripts/validate_compression_fidelity.py examples/compression-fidelity.ex
   `strengthens_claim` is `false`: agreement here is an echo chamber, not
   corroboration.
 
+- **`closure-restraint.example.json`** — a conclusion that "the reorganization
+  caused the employee uncertainty", drawn from four adjacent facts. The record names
+  its licensing burden and declares the `imposed_structure` (`CAUSAL`, `NARRATIVE`)
+  it added — and its `provenance_refs` say honestly that the causation is imposed
+  and unsourced. The conclusion is not forbidden; the smuggling is surfaced.
+
 ## What a passing record proves
 
 Only that the check was posed and is internally consistent. Assurance stays at

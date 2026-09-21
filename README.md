@@ -21,8 +21,8 @@ pipeline. It has two layers:
 | [`FRR.md`](FRR.md) | entry point, purpose, host neutrality |
 | [`BOOT.md`](BOOT.md) | how a host loads the field |
 | [`kernel/KERNEL.md`](kernel/KERNEL.md) | non-negotiable rules |
-| [`field/`](field/) | compact seed, lenses, regimes, residual location, mathematical contact, naming the depth |
-| [`passes/`](passes/README.md) | compression fidelity, closure scope, field change, source weave, crystallization |
+| [`field/`](field/) | compact seed, lenses, regimes, residual location, mathematical contact, naming the depth, imposed structure |
+| [`passes/`](passes/README.md) | compression fidelity, closure scope, field change, source weave, closure restraint, crystallization |
 | [`examples/`](examples/README.md) | one validated record per pass — real fixtures, not prose |
 | [`runtime/schemas/`](runtime/schemas) | the record schemas (JSON source + prose) |
 | [`scripts/`](scripts) | validators and tests |
