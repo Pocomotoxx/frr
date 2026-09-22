@@ -22,7 +22,7 @@ pipeline. It has two layers:
 | [`BOOT.md`](BOOT.md) | how a host loads the field |
 | [`kernel/KERNEL.md`](kernel/KERNEL.md) | non-negotiable rules |
 | [`field/`](field/) | compact seed, lenses, regimes, residual location, mathematical contact, naming the depth, imposed structure, record hygiene |
-| [`passes/`](passes/README.md) | compression fidelity, closure scope, field change, source weave, closure restraint, verdict, crystallization |
+| [`passes/`](passes/README.md) | compression fidelity, closure scope, field change, source weave, closure restraint, verdict, composite decision, crystallization |
 | [`examples/`](examples/README.md) | one validated record per pass — real fixtures, not prose |
 | [`runtime/schemas/`](runtime/schemas) | the record schemas (JSON source + prose) |
 | [`scripts/`](scripts) | validators and tests |
