@@ -93,6 +93,28 @@ One idea was adapted (not absorbed):
   deterministic redaction of credentials, endpoints, and paths from persisted
   records, adapted to enforce that FRR records carry references, not raw secrets.
 
+## Added from the TypeSafe / Jev proposal
+
+TypeSafe's Jev is a commercial "System One" model that returns typed, structured
+decisions with calibrated probabilities instead of generated text. Most of it — the
+model, the training method, the parallel sampler, the API and its pricing — is a
+runtime substrate, and the promise that it "cannot hallucinate / is type-safe" is a
+property of a constrained decoder that a Markdown discipline cannot claim for itself.
+FRR references such systems as an external substrate rather than absorbing them, and
+it never imports a calibrated number it cannot justify.
+
+One idea was adapted (not absorbed):
+
+- the **Composite Decision** pass — TypeSafe's "atomic questions, composed in code":
+  decompose a multi-factor judgment into well-scoped questions, judge each on its own,
+  and combine the results with an explicit rule (a coefficient you change), rather
+  than one holistic prompt. FRR renders this as an enforced record whose composite
+  level must be the one the declared `MIN`/`MAX`/`WEIGHTED` rule produces, with levels
+  kept qualitative. TypeSafe is a commercial model lab — a different author and
+  tradition — so this agreement is **independent**, a source-convergence `INDEPENDENT`
+  that strengthens the principle. It is the constructive companion to the Faithful
+  Compression Pass: refuse the collapse up front instead of only testing for it after.
+
 ## Compressed
 
 > Let the intuition move. Identify what mathematical work each expression performs

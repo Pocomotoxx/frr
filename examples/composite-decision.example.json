@@ -1,0 +1,12 @@
+{
+  "record_type": "composite-decision-record",
+  "decision_ref": "decision:startup-pitch-overall-readiness",
+  "dimensions": [
+    { "dimension": "market size", "level": "HIGH" },
+    { "dimension": "technical feasibility", "level": "MEDIUM" },
+    { "dimension": "differentiation", "level": "LOW" }
+  ],
+  "combination": "MIN",
+  "composite_level": "LOW",
+  "assurance_level": "DECLARED"
+}

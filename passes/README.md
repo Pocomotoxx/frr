@@ -17,6 +17,7 @@ corresponding claim is actually made.
 | [Source Weave](SOURCE_WEAVE.md) | cross-source agreement offered as support | `source-convergence-record` |
 | [Closure Restraint](CLOSURE_RESTRAINT.md) | a conclusion / summary / closure that ends the inquiry | `closure-restraint-record` |
 | [Verdict](VERDICT.md) | a claim that a goal was achieved / a task succeeded / a change improved something | `verdict-record` |
+| [Composite Decision](COMPOSITE_DECISION.md) | a multi-factor judgment delivered as one overall rating / score / call | `composite-decision-record` |
 | [Crystallization](CRYSTALLIZATION.md) | a structure stabilizes as a definition/model/decision | advisory only |
 
 Records live under `runtime/schemas/*.schema.{json,md}`; validators under

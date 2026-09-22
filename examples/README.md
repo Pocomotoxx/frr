@@ -47,6 +47,12 @@ python scripts/validate_compression_fidelity.py examples/compression-fidelity.ex
   criteria pass, the `verdict` is `PARTIAL`, not `ACHIEVED` — evidence before
   verdict.
 
+- **`composite-decision.example.json`** — an overall readiness call on a startup
+  pitch, decomposed into market size (`HIGH`), technical feasibility (`MEDIUM`), and
+  differentiation (`LOW`). The `combination` is `MIN`, so the `composite_level` is
+  `LOW` — the weakest link, not an average that would hide it. Change the rule, not
+  the argument, when priorities shift.
+
 ## What a passing record proves
 
 Only that the check was posed and is internally consistent. Assurance stays at

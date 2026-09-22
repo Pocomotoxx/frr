@@ -15,6 +15,7 @@ from scripts.validate_field_change import validate as v_field
 from scripts.validate_source_convergence import validate as v_source
 from scripts.validate_closure_restraint import validate as v_restraint
 from scripts.validate_verdict import validate as v_verdict
+from scripts.validate_composite_decision import validate as v_composite
 
 EXAMPLES = ROOT / "examples"
 
@@ -25,6 +26,7 @@ CASES = {
     "source-convergence.example.json": v_source,
     "closure-restraint.example.json": v_restraint,
     "verdict.example.json": v_verdict,
+    "composite-decision.example.json": v_composite,
 }
 
 

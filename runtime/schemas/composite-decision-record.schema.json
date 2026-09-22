@@ -1,0 +1,25 @@
+{
+  "$id": "composite-decision-record",
+  "description": "Enforced field set and enums for a host-neutral, evidence-bound composite-decision record. Single source read by scripts/validate_composite_decision.py; the prose composite-decision-record.schema.md documents intent and rules and does not restate these lists. Procedural rules (at least two dimensions; each dimension named and levelled; WEIGHTED requires a positive weight per dimension; MIN/MAX fix the composite to the extreme level; WEIGHTED bounds the composite within the dimension levels; no VERIFIED assurance) stay in the validator. Adapts TypeSafe/Jev's 'decompose into atomic questions and combine with an explicit rule' discipline, keeping levels qualitative rather than importing a calibrated number.",
+  "record": {
+    "required": [
+      "record_type",
+      "decision_ref",
+      "dimensions",
+      "combination",
+      "composite_level",
+      "assurance_level"
+    ],
+    "enums": {
+      "combination": ["MIN", "MAX", "WEIGHTED"],
+      "composite_level": ["LOW", "MEDIUM", "HIGH"],
+      "assurance_level": ["DECLARED", "UNVERIFIABLE"]
+    }
+  },
+  "dimension": {
+    "required": ["dimension", "level"],
+    "enums": {
+      "level": ["LOW", "MEDIUM", "HIGH"]
+    }
+  }
+}
